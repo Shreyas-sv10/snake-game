@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐍 Ultimate Snake Game</title>
+</head>
+<body>
+
+  <!-- 🧢 Game Header -->
+  <header>
+    <h1>🐍 Ultimate Snake Game</h1>
+    <p>Welcome! Use arrow keys (or swipe) to control the snake. Eat the apples, avoid the walls and yourself!</p>
+  </header>
+
+  <!-- 🎮 Game Area -->
+  <main id="gameSection">
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" width="600" height="600">
+      Your browser doesn't support canvas.
+    </canvas>
+
+    <!-- 📢 Live Game Messages -->
+    <div id="gameMessages">
+      <p id="statusMessage">Game Ready. Press Start to Play!</p>
+    </div>
+  </main>
+
+  <!-- 🧾 Scoreboard Section -->
+  <section id="scoreboard">
+    <div><strong>🎯 Score:</strong> <span id="score">0</span></div>
+    <div><strong>🏆 High Score:</strong> <span id="highScore">0</span></div>
+    <div><strong>⚡ Speed Level:</strong> <span id="speedLevel">Normal</span></div>
+  </section>
+
+  <!-- ⚙️ Game Controls -->
+  <section id="controls">
+    <button id="startBtn">▶️ Start Game</button>
+    <button id="pauseBtn">⏸️ Pause</button>
+    <button id="resetBtn">🔄 Reset</button>
+  </section>
+
+  <!-- 🧰 Settings Panel -->
+  <section id="settings">
+    <h2>⚙️ Game Settings</h2>
+    <label for="difficultySelect">Select Difficulty:</label>
+    <select id="difficultySelect">
+      <option value="easy">🐢 Easy</option>
+      <option value="normal" selected>⚖️ Normal</option>
+      <option value="hard">🔥 Hard</option>
+    </select>
+    <br><br>
+    <label>
+      <input type="checkbox" id="borderToggle" checked>
+      Walls are deadly
+    </label>
+  </section>
+
+  <!-- 📜 Game Rules Section -->
+  <section id="gameRules">
+    <h2>📜 How to Play</h2>
+    <ul>
+      <li>Use Arrow Keys to control the snake</li>
+      <li>Eat the red apples to grow</li>
+      <li>Avoid crashing into walls or your own tail</li>
+      <li>Game speeds up as you progress</li>
+      <li>High scores are saved in your browser</li>
+    </ul>
+  </section>
+
+  <!-- 🧠 About Game -->
+  <section id="aboutGame">
+    <h2>🧠 About This Game</h2>
+    <p>This game is built using HTML, CSS, and JavaScript. It's a modern twist on the classic Snake game, with multiple difficulty levels, score tracking, and responsive design.</p>
+  </section>
+
+  <!-- 👤 Credits -->
+  <footer>
+    <p>Made with 💚 by Shreyas</p>
+    <p>&copy; 2025 Snake Game Project</p>
+  </footer>
+
+</body>
+                                                </html>
