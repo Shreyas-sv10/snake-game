@@ -1,0 +1,122 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐍 Ultimate Snake Game</title>
+
+  <!-- 💅 CSS Styling Starts Here -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    h1 {
+      color: lime;
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+
+    #gameSection {
+      margin: 20px 0;
+    }
+
+    canvas {
+      background: #000;
+      box-shadow: 0 0 20px lime;
+      border: 4px solid #fff;
+      display: block;
+    }
+
+    #scoreboard {
+      display: flex;
+      gap: 20px;
+      margin: 15px 0;
+      font-size: 1.2em;
+      background: #222;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #444;
+    }
+
+    #controls {
+      margin: 10px 0;
+    }
+
+    button {
+      background-color: limegreen;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      color: white;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: green;
+    }
+
+    #settings, #gameRules, #aboutGame {
+      max-width: 600px;
+      background: #1a1a1a;
+      padding: 15px 20px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #222;
+    }
+
+    h2 {
+      color: #0f0;
+    }
+
+    label, select, input {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    #gameMessages {
+      margin-top: 10px;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px 10px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 650px) {
+      canvas {
+        width: 90vw;
+        height: 90vw;
+      }
+
+      #scoreboard {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+  <!-- 💅 CSS Styling Ends Here -->
+</head>
